@@ -32,8 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,11 +51,80 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EF\Address.cs" />
+    <Compile Include="EF\AddressType.cs" />
+    <Compile Include="EF\BillOfMaterial.cs" />
+    <Compile Include="EF\BusinessEntity.cs" />
+    <Compile Include="EF\BusinessEntityAddress.cs" />
+    <Compile Include="EF\BusinessEntityContact.cs" />
+    <Compile Include="EF\ContactType.cs" />
+    <Compile Include="EF\CountryRegion.cs" />
+    <Compile Include="EF\CountryRegionCurrency.cs" />
+    <Compile Include="EF\CreditCard.cs" />
+    <Compile Include="EF\Culture.cs" />
+    <Compile Include="EF\Currency.cs" />
+    <Compile Include="EF\CurrencyRate.cs" />
+    <Compile Include="EF\Customer.cs" />
+    <Compile Include="EF\Department.cs" />
+    <Compile Include="EF\EmailAddress.cs" />
+    <Compile Include="EF\Employee.cs" />
+    <Compile Include="EF\EmployeeDepartmentHistory.cs" />
+    <Compile Include="EF\EmployeePayHistory.cs" />
+    <Compile Include="EF\Illustration.cs" />
+    <Compile Include="EF\JobCandidate.cs" />
+    <Compile Include="EF\Location.cs" />
+    <Compile Include="EF\AW2012Context.cs" />
+    <Compile Include="EF\Password.cs" />
+    <Compile Include="EF\Person.cs" />
+    <Compile Include="EF\PersonCreditCard.cs" />
+    <Compile Include="EF\PersonPhone.cs" />
+    <Compile Include="EF\PhoneNumberType.cs" />
+    <Compile Include="EF\Product.cs" />
+    <Compile Include="EF\ProductCategory.cs" />
+    <Compile Include="EF\ProductCostHistory.cs" />
+    <Compile Include="EF\ProductDescription.cs" />
+    <Compile Include="EF\ProductDocument.cs" />
+    <Compile Include="EF\ProductInventory.cs" />
+    <Compile Include="EF\ProductListPriceHistory.cs" />
+    <Compile Include="EF\ProductModel.cs" />
+    <Compile Include="EF\ProductModelIllustration.cs" />
+    <Compile Include="EF\ProductModelProductDescriptionCulture.cs" />
+    <Compile Include="EF\ProductPhoto.cs" />
+    <Compile Include="EF\ProductProductPhoto.cs" />
+    <Compile Include="EF\ProductReview.cs" />
+    <Compile Include="EF\ProductSubcategory.cs" />
+    <Compile Include="EF\ProductVendor.cs" />
+    <Compile Include="EF\PurchaseOrderDetail.cs" />
+    <Compile Include="EF\PurchaseOrderHeader.cs" />
+    <Compile Include="EF\SalesOrderDetail.cs" />
+    <Compile Include="EF\SalesOrderHeader.cs" />
+    <Compile Include="EF\SalesOrderHeaderSalesReason.cs" />
+    <Compile Include="EF\SalesPerson.cs" />
+    <Compile Include="EF\SalesPersonQuotaHistory.cs" />
+    <Compile Include="EF\SalesReason.cs" />
+    <Compile Include="EF\SalesTaxRate.cs" />
+    <Compile Include="EF\SalesTerritory.cs" />
+    <Compile Include="EF\SalesTerritoryHistory.cs" />
+    <Compile Include="EF\ScrapReason.cs" />
+    <Compile Include="EF\Shift.cs" />
+    <Compile Include="EF\ShipMethod.cs" />
+    <Compile Include="EF\ShoppingCartItem.cs" />
+    <Compile Include="EF\SpecialOffer.cs" />
+    <Compile Include="EF\SpecialOfferProduct.cs" />
+    <Compile Include="EF\StateProvince.cs" />
+    <Compile Include="EF\Store.cs" />
+    <Compile Include="EF\TransactionHistory.cs" />
+    <Compile Include="EF\TransactionHistoryArchive.cs" />
+    <Compile Include="EF\UnitMeasure.cs" />
+    <Compile Include="EF\Vendor.cs" />
+    <Compile Include="EF\WorkOrder.cs" />
+    <Compile Include="EF\WorkOrderRouting.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
